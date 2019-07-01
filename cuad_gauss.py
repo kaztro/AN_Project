@@ -58,7 +58,10 @@ def gauss_legendre(f, a, b, R, C, n):
 
 
 #F function
-f = lambda x: np.exp(-(x**2)/2)
+#f = lambda x: np.exp(-(x**2)/2)
+#f = lambda x: x**4
+#f = lambda x: (4*x + 4) / (np.sqrt( (2*x + 2)**2 + 9 ))
+#f = lambda x: 1/x
 
 #Interval
 a = -1.0; b = 1.0
@@ -83,5 +86,4 @@ print("Gaussian integral n=8: ", Gau8)
 print("Gaussian integral n=9: ", Gau9)
 print("Gaussian integral n=10: ", Gau10)
 
-#f = lambda x: x**4
-#f = lambda x: (4*x + 4) / (np.sqrt( (2*x + 2)**2 + 9 ))
+
